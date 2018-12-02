@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+/*
+  background: #fdd;
+*/
+}
+.col-1 {
+    display: inline-block;
+    width: 500px;
+    /* border: solid 1px; */
+}
+.col-2 {
+    display: inline-block;
+    width: 100px;
+    /* border: solid 1px; */
+}
+
+.button1 {
+    /* 文字サイズを1.4emに指定 */
+    font-size: 1.4em;
+
+    /* 文字の太さをboldに指定 */
+    font-weight: bold;
+
+    /* 縦方向に10px、
+     * 横方向に30pxの余白を指定 */
+    padding: 10px 30px;
+}
+
+.square_btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.box1 {
+    padding: 0 0;
+    margin: 1em 0;
+    font-weight: bold;
+    border: solid 2px #000000;
+}
+.box1 p {
+    margin: 0;
+    padding: 0;
+}
+
+.box2 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.box2 p {
+    margin: 0;
+    padding: 0;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  line-height: 1.5;
+}
+
+table.type06 th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+}
+table.type06 td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+ }
+
+tr:nth-child(even) {
+  background: #d9d9d9;
+ }
+
+.double{
+	width:100%;
+	text-align:center;
+}
+.double h2{
+	position:relative;
+	display:inline-block;
+}
+.double h2:before, .double h2:after{
+	content:"";
+	display:block;
+	width:200px;
+	height:4px;
+	border-top:1px solid #111;
+	border-bottom:1px solid #111;
+	position:absolute;
+	top:50%;
+	margin-top:-2px;
+}
+.double h2:before{left:-224px;}
+.double h2:after{right:-224px;}
